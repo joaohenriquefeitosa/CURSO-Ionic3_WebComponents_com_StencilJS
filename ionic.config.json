@@ -1,0 +1,7 @@
+{
+  "name": "curso-ionic-stencil",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
