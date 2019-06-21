@@ -14,5 +14,12 @@
 
 
 <ion-content padding>
+    <div *ngFor="let number of arr">
+        {{number}}
+    </div>
 
+    <div *ngFor="let p of person; let i = index">
+        #{{i+1}}º - {{p.name}} - {{p.age}}
+        Notas: <span *ngFor="let nota of p.notas">{{nota}} -</span>
+    </div>
 </ion-content>

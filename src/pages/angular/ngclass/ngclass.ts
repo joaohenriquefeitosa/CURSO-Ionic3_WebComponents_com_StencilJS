@@ -15,6 +15,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class NgclassPage {
 
+  public css: string = '';
+  public condicao: boolean = false;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 

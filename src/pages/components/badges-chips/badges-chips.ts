@@ -15,11 +15,21 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class BadgesChipsPage {
 
+  public amigos: number = 20;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad BadgesChipsPage');
+  }
+
+  addAmigos = () => {
+    this.amigos += 1;
+  }
+
+  deletarPin = (chip: HTMLElement) => {
+    chip.remove();
   }
 
 }

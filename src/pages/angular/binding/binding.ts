@@ -18,7 +18,7 @@ export class BindingPage {
   public valor: number = 1;
   public valor2: number = 2;
 
-  public nome: string = 'Gabriel';
+  public nome: string = 'John';
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

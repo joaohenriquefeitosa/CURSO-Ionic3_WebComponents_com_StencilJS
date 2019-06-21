@@ -14,5 +14,30 @@
 
 
 <ion-content padding>
+    <ion-item (click)="addAmigos()">
+        <ion-icon name="logo-facebook"></ion-icon>
+        Amigos
+        <ion-badge item-end color="secondary">{{amigos}}</ion-badge>
+    </ion-item>
+    <br>
+    <ion-chip color="danger">
+        <ion-label>Padrão</ion-label>
+    </ion-chip>
+    <br>
+    <ion-chip>
+        <ion-icon name="pin"></ion-icon>
+        <ion-label>Minha Localização</ion-label>
+    </ion-chip>
 
+    <br>
+
+    <ion-chip #chip1>
+        <ion-avatar>
+            <img src="https://www.w3schools.com/w3images/avatar6.png" alt="">
+        </ion-avatar>
+        <label>Usuario Tal</label>
+        <button ion-button clear (click)="deletarPin(chip1)">
+            x
+        </button>
+    </ion-chip>
 </ion-content>

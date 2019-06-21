@@ -14,5 +14,11 @@
 
 
 <ion-content padding>
-
+    <button (click)="css = 'bold'">.bold</button>
+    <button (click)="css = 'italic'">.italic</button>
+    <button (click)="css = 'font-red'">.font-red</button>
+    <button (click)="condicao = !condicao">Alterar</button>
+    <!--<h1 [ngClass]="css">Usando Ngclass</h1>-->
+    <h1 [ngClass]="['bold', 'italic', 'font-red']">Usando Ngclass</h1>
+    <h1 [ngClass]="{'font-red bold' : condicao, 'italic bold' : !condicao}">Anterando</h1>
 </ion-content>

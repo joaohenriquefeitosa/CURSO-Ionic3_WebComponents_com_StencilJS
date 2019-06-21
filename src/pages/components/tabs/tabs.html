@@ -14,5 +14,12 @@
 
 
 <ion-content padding>
-
+    <ion-tabs selectedIndex="1" tabsPlacement="top" color="dark">
+        <ion-tab *ngFor="let tab of tabs" 
+                        [root]="tab.componente" 
+                        [tabTitle]="tab.nome" 
+                        [tabIcon]="tab.icone" 
+                        [tabBadge]="tab.badge" 
+                        tabBadgeStyle="secondary"></ion-tab>
+    </ion-tabs>
 </ion-content>
